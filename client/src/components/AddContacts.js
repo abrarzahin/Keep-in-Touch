@@ -10,7 +10,7 @@ export default class AddContacts extends Component {
             email: this.refs.email.value,
         }
 
-        fetch("http://localhost:8080/api/contacts", {
+        fetch("http://localhost:7000/api/contacts", {
             method: "POST",
             headers: {
                 "content-type": "application/json",
@@ -29,11 +29,11 @@ export default class AddContacts extends Component {
                 <form className="col s12" onSubmit={this.submitContact.bind(this)}>
                 <div className="row">
                     <div className="input-field col s6">
-                        <input placeholder="Placeholder" ref="first_name" type="text" className="validate" />
+                        <input placeholder="Placeholder" ref="firstName" type="text" className="validate" />
                     <label htmlFor="firstName">First Name</label>
                     </div>
                     <div className="input-field col s6">
-                        <input ref="last_name" type="text" className="validate" />
+                        <input ref="lastName" type="text" className="validate" />
                         <label htmlFor="lastName">Last Name</label>
                     </div>
                 </div>

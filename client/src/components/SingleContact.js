@@ -7,7 +7,7 @@ const SingleContact = ({item}) => (
         <div className="card-content white-text">
           <span className="card-title">{item.firstName} {item.lastName}</span>
         </div>
-        <div className="card-action">
+        <div className="card-action white-text">
           <p>{item.email}</p>
         </div>
       </div>
